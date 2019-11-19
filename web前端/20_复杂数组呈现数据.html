@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>使用复杂数组呈现数据--商品列表</h2>
+    <table width="100%" border="1">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>单价</th>
+                <th>生产日期</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyLaptop">
+            <tr>
+                <td>101</td>
+                <td>戴尔燃700</td>
+                <td>¥5000</td>
+                <td>2018-05</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // 方案1：存储所有笔记本数据
+        var data1 =[
+            [5001,'戴尔燃7000', 5000, '2018/05'],
+            [5008,'小米pro', 3999, '2019/15'],
+            [5015,'aple air', 8999, '2013/05'],
+            [5033,'MacBook', 12999, '2020/05'],
+        ];
+        var html = '';
+        data1.forEach(function (pc,i) {
+            html += '<tr>';
+            html += '<td>'+pc[0]+'</td>';
+            html += '<td>'+pc[1]+'</td>';
+            html += '<td>'+pc[2]+'</td>';
+            html += '<td>'+pc[3]+'</td>';
+            html += '</tr>';
+        })
+        tbodyLaptop.innerHTML = html
+    </script>
+
+</body>
+</html>
