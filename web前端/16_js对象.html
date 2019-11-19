@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> <span id="s1"> </span>的成绩单</h2>
+    <hr>
+    <p>数学成绩是：<span id="m1"> </span></p>
+    <p>语文成绩是：<span id="c1"> </span></p>
+    <p>英语成绩是：<span id="e1"> </span></p>
+    <hr>
+    <p>总分是：<span id="sum1"> </span></p>
+    <p>平均成绩是：<span id="avg1"> </span></p>
+
+    <script>
+        var rect2 = {
+            length:10,
+            width:5,
+            getSize: function () {
+                return this.width * this.length
+            },
+            getPerimeter:function () {
+                return 2*(this.length+this.width)
+            }
+
+        };
+        var s = rect2.getSize()
+        console.log('矩形的面积为：'+ s)
+        var p = rect2.getPerimeter()
+        console.log('周长为：'+p)
+
+
+        var student ={
+            stuName:'张三',
+            chinese:95,
+            math:80,
+            english:80,
+            getTotal:function () {
+                return this.chinese+this.english+this.math
+            },
+            getAverage:function () {
+                return this.getTotal()/3
+            }
+        }
+
+        var sum = student.getTotal()
+        var avg = student.getAverage()
+        console.log(student.stuName+'的总分为：'+sum)
+        console.log(student.stuName+'的平均分为：'+avg)
+        s1.innerHTML = student.stuName
+        m1.innerHTML = student.math
+        c1.innerHTML = student.chinese
+        e1.innerHTML = student.english
+        avg1.innerHTML = student.getAverage()
+        sum1.innerHTML = student.getTotal()
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function f(strat, end) {
+            var sum = 0;
+            for (var i = strat;i< end; i++){
+                sum += i;
+            }
+            return sum;
+        }
+        // var s   = f(1,101);
+        // console.log(s)
+        function f1() {
+            var a = Number(prompt('start'));
+            var b = Number(prompt('end'));
+            var res= f(a,b)
+            alert('累加和为：'+res)
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="f1()">点击累加</button>
+</body>
+</html>
