@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>进制转化器</h2>
+    <input id="inputNum">
+    <button id="btBin"> 转化为二进制表示的字符串</button>
+    <button id="btOct"> 转化为八进制表示的字符串</button>
+    <p id="pResult">转化结果。。。</p>
+
+    <script>
+        btBin.onclick = function () {
+            var num = Number(inputNum.value);
+            var arr = [];
+            while (num != 0){
+                arr.unshift(num % 2)
+                num=  parseInt( num/2);
+            };
+            var result = arr.join('');
+            pResult.innerHTML = result;
+        }
+
+
+    </script>
+
+</body>
+</html>

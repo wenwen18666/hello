@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function isLeap(year) {
+            return  year %4 ==0 && year %100 !=0 || year%400 ==0;
+        }
+        function getDay(y, m, d) {
+
+            var sum = 0;
+            for (var i = 1990; i<y;i++){
+                sum += 365;
+                if (isLeap(i)){
+                    sum += 1
+                }
+            }
+
+            for (var i=1;i<m;i++){
+            switch (i) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                    sum +=31;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    sum +=30;
+                case 2:
+                    sum +=28;
+                    if (isLeap(y)){
+                    sum+=1;
+                    }
+            }
+            }
+            sum += d;
+
+            var res = sum % 7;
+            switch (res) {
+                case 0:
+                    res='周日';
+                    break;
+                case 1:
+                    res='周1';
+                    break;
+                case 2:
+                    res='周2';
+                    break;
+                case 3:
+                    res='周3';
+                    break;
+                case 4:
+                    res='周4';
+                    break;
+                case 5:
+                    res='周5';
+                    break;
+                case 6:
+                    res='周6';
+                    break;
+
+            }
+            return res
+            }
+
+        function doGetDay() {
+            var year =Number(prompt('year'))
+            var month =Number(prompt('month'))
+            var day =Number(prompt('day'))
+            result = getDay(year,month,day)
+            alert(year+'-'+month+'-'+day+'是'+result);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="doGetDay()">获取星期几</button>
+</body>
+</html>

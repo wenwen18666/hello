@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var priceList = [60,70,80,90,99];
+        // for(i=0;i<priceList.length;i++){
+        //      priceList[i] *= 0.9
+        //     console.log(priceList[i])
+        // }
+
+        // priceList.forEach(function (p,i) {
+        //     p *= 0.9
+        //     console.log(p)
+        // })
+        function getMax(arr) {
+            var max = arr[0];
+            for(var i=1;i<arr.length;i++){
+                max = arr[i]>max ? arr[i] :max;
+
+            }
+            return max;
+        }
+        var m = getMax(priceList)
+        console.log('最大值'+m)
+
+        function indexOF(arr,e) {
+            var index = -1;
+            for (var i=0;i<arr.length;i++){
+                if (arr[i]===e){
+                    index =i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+        var i = indexOF(priceList,99)
+        console.log(i)
+    </script>
+</body>
+</html>
