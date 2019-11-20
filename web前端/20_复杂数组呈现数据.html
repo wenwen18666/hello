@@ -27,19 +27,27 @@
 
     <script>
         // 方案1：存储所有笔记本数据
-        var data1 =[
-            [5001,'戴尔燃7000', 5000, '2018/05'],
-            [5008,'小米pro', 3999, '2019/15'],
-            [5015,'aple air', 8999, '2013/05'],
-            [5033,'MacBook', 12999, '2020/05'],
-        ];
+        // var data1 =[
+        //     [5001,'戴尔燃7000', 5000, '2018/05'],
+        //     [5008,'小米pro', 3999, '2019/15'],
+        //     [5015,'aple air', 8999, '2013/05'],
+        //     [5033,'MacBook', 12999, '2020/05'],
+        // ];
+
+            var data1 =[
+                    {pid:5001,pname:'戴尔燃7000', price:5000, day:'2018/05'},
+                    {pid:5008,pname:'小米pro', price:3999, day:'2019/15'},
+                    {pid:5015,pname:'aple air', price:8999, day:'2013/05'},
+                    {pid:5033,pname:'MacBook pro', price:12999, day:'2020/05'},
+            ];
+
         var html = '';
         data1.forEach(function (pc,i) {
             html += '<tr>';
-            html += '<td>'+pc[0]+'</td>';
-            html += '<td>'+pc[1]+'</td>';
-            html += '<td>'+pc[2]+'</td>';
-            html += '<td>'+pc[3]+'</td>';
+            html += '<td>'+pc.pid+'</td>';
+            html += '<td>'+pc.pname+'</td>';
+            html += '<td>'+pc.price+'</td>';
+            html += '<td>'+pc.day+'</td>';
             html += '</tr>';
         })
         tbodyLaptop.innerHTML = html
