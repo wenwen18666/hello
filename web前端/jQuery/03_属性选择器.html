@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        window.onload = function () {
+            console.log($("[id]"));
+            console.log($(["id=d1"]));
+            console.log($("[id^=d]"));
+            console.log($(["id$=d"]));
+        }
+    </script>
+</head>
+<body>
+    <h1 id="d1">标题</h1>
+    <h1 id="d2">标题</h1>
+    <h1 id="c1d">标题</h1>
+    <h1 id="c1d1">标题</h1>
+    <h1>参考文本</h1>
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+<!--    <script>-->
+<!--        window.onload = function () {-->
+<!--            function show() {-->
+<!--                $('div').val($("input").html());-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+</head>
+<body>
+    <input type="text">
+    <button onclick="show()">显示</button>
+    <div></div>
+    <script>
+            function show() {
+                $('div').html("<h1>"+$("input").val()+"</h1>");
+            };
+    </script>
+</body>
+</html>

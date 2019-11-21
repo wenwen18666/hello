@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <h1 id="d1">标题</h1>
+    <h1 class="c1">标题</h1>
+    <h1>标题</h1>
+    <h1>标题</h1>
+    <h1>标题</h1>
+    <h1>标题</h1>
+    <h1>标题</h1>
+    <h1>标题</h1>
+    <button onclick="first()">:first</button>// 取第一个元素 <br>
+    <button onclick="last()">:last</button>     // 取最后一个元素 <br>
+    <button onclick="odd()">:odd</button>       // 取偶数 <br>
+    <button onclick="even()">:even</button>     // 取奇数 <br>
+    <button onclick="eq()">:eq</button>     // 取指定指定元素 <br>
+    <button onclick="lt()">:lt</button>     // 取指定小于于元素 <br>
+    <button onclick="gt()">:gt</button>     // 取指定大于元素 <br>
+    <button onclick="not()">:not</button>     // 取否定元素 <br>
+    <script>
+        function first() {
+            $("h1:first").css("color","red");
+        };
+        function last() {
+            $("h1:last").css("color","green");
+        };
+        function odd() {
+            $("h1:odd").css("color","blue");
+        };
+        function even() {
+            $("h1:even").css("color","orange");
+        };
+        function eq() {
+            $("h1:eq(5)").css("color","green");
+        };
+        function lt() {
+            $("h1:lt(5)").css("color","blue");
+        };
+        function gt() {
+            $("h1:gt(5)").css("color","orange");
+        };
+        function not() {
+            $("h1:not(#d1,.c1)").html('否定');
+        };
+
+    </script>
+
+
+</body>
+</html>

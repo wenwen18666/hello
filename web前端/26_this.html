@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="index.js"></script>
+    <script>
+        window.onload =function () {
+            var span =$('span');
+            var lis = $('ol').children;
+            for(var i in lis){
+                console.log(i);
+                lis[i].onclick = function () {
+                    span.innerHTML = this.innerHTML;
+                }
+            }
+        }
+
+    </script>
+    <style>
+        ul,ol{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 200px;
+            background: orange;
+            cursor:default;
+        }
+        ol{
+            background: green;
+            display: none;
+        }
+        ul li:first-child:hover ol{
+            display: block;
+
+        }
+        ol li:hover{
+            background: deepskyblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <span>北京</span>
+            <ol>
+                <li>北京</li>
+                <li>河北</li>
+                <li>河南</li>
+                <li>山东</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+</html>

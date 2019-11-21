@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6134d234-c968-4d85-8beb-83a922eae1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/23_练习验证码生成.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24_banner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index_banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index_banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index_banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index_banner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index_banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/26_this.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/01_jQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/02_过滤选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/03_属性选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/04_练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-3.4.1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/25_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,7 +131,7 @@
       <workItem from="1574217052462" duration="1333000" />
       <workItem from="1574224625378" duration="5673000" />
       <workItem from="1574336898855" duration="3548000" />
-      <workItem from="1574340866658" duration="242000" />
+      <workItem from="1574340866658" duration="10488000" />
     </task>
     <servers />
   </component>

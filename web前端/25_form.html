@@ -21,6 +21,16 @@
             uname.onchange = function () {
                 console.log('onchange:',uname.value);
             };
+            hobby.onchange = function () {
+                console.log(hobby.checked);
+            }
+            form.onsubmit = function () {
+                if (uname.value.length == 0){
+                    return false;
+                }else{
+                    return true;
+                }
+            }
         }
     </script>
 </head>

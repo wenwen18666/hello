@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        window.onload = function () {
+            console.log($('h1'));
+            $('h1').html('动态修改');
+            $('h1')[0].innerHTML = '哈哈';
+            $('h1').get(1).innerHTML = 'get转原生';
+            $('h1').eq(2).html('eq(index)返回jquery对象')
+        }
+    </script>
+    <script>
+        window.onload = function(){
+            console.log($('h1'));
+            $('#d1').html("<a href>超链接</a>");
+            $(".c1").text("<a href>超链接</a>")
+            $("#d1,.c1,a").css("color","red");
+
+            console.log($("div h3"));
+            console.log($("h3+p"));
+            console.log($("h3~p"));
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="d1">标题</h1>
+    <h2 class="c1">标题2</h2>
+    <h1>标题</h1>
+    <h1>标题</h1>
+    <h1>标题</h1>
+
+    <div>
+        <p>参考1</p>
+        <h3>标题3</h3>
+        <p>参考2</p>
+        <p>参考3</p>
+
+    </div>
+</body>
+</html>
