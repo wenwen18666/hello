@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <script>
+        var c = 'abcdefghjklmnopqrstuvwsyz0123456789ABCDEFGHIJKLMNOPQRSTUVWSYZ';
+        console.log(c.length);
+
+
+        var code ='';
+        for(i=0;i<4;i++){
+
+            var s = c.charAt(parseInt(Math.random()*61));
+            code  += s;
+        };
+        console.log(code);
+    </script>
+</body>
+</html>

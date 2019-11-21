@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner</title>
+    <style>
+        #banner{
+            width: 1000px;
+            height: 400px;
+            margin: 50px auto;
+        }
+        #banner img{
+            width: 1000px;
+            height: 400px;
+            display: none;
+        }
+        #banner img:first-child{
+            display: block;
+        }
+
+    </style>
+        <script src="index.js"></script>
+        <script>
+            window.onload = function () {
+                var banner = $('div');
+                var imgs = banner.children;
+                var timer = setInterval(autoPlay,2500);
+                var index = 0;
+                function autoPlay() {
+                        imgs[index].style.display ='none';
+                        index ++;
+                        if (index == imgs.length){
+                            index =0;
+                        }
+                        imgs[index].style.display ='block';
+                }
+                banner.onmouseover = function () {
+                    clearInterval(timer);
+                }
+                banner.onmouseout = function () {
+                    timer = setInterval(autoPlay,1500);
+                }
+            }
+
+        </script>
+
+</head>
+<body>
+    <div id="banner">
+        <img src="index_banner1.jpg">
+        <img src="index_banner2.jpg">
+        <img src="index_banner3.jpg">
+        <img src="index_banner4.jpg">
+        <img src="index_banner5.jpg">
+
+
+    </div>
+</body>
+</html>

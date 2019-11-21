@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="index.js"></script>
+    <script>
+        window.onload = function () {
+            var form = $('form');
+            var uname = $('input');
+            var hobby = $('input',1);
+            uname.onfocus = function () {
+                console.log('输入框获取到焦点')
+            };
+            uname.onblur = function () {
+                console.log('输入框失去焦点',uname.value);
+            };
+            uname.oninput = function () {
+                // console.log(uname.value);
+            };
+            uname.onchange = function () {
+                console.log('onchange:',uname.value);
+            };
+        }
+    </script>
+</head>
+<body>
+    <form action="/login" method="get" enctype="">
+        <p>
+            用户姓名：
+            <input type="text" name="uname" placeholder="" maxlength="10" autocomplete="off">
+        </p>
+        <p>
+            用户兴趣：
+            <input type="checkbox" name="hobby" value="study" checked>学习
+        </p>
+        <input type="submit">
+
+
+    </form>
+
+</body>
+</html>

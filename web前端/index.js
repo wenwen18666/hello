@@ -1,14 +1,9 @@
-function fn(a,b){
-a = prompt('a的值');
-b = prompt('b的值');
-i =a;
-var sum=0;
-while (i <= b){
+function $(tagname,index) {
+    var elems = document.getElementsByTagName(tagname);
+    if (index){
+        return elems[index];
+    }else{
+        return elems[0];
+    }
 
-    sum += i;
-    i++;
 }
-console.log(a,b,sum);
-return sum;
-}
-
