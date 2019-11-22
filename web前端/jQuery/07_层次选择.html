@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div id="box">
+        <div class="left">
+            <h1>标题</h1>
+        </div>
+    </div>
+    <script>
+        console.log('parent:',$("h1").parent());
+        console.log('parents:',$("h1").parents());
+        console.log("指定查找：",$("h1").parents('#box'));
+
+    </script>
+</body>
+</html>

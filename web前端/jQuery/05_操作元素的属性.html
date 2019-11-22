@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <h1>标题一</h1>
+    <input type="checkbox">
+    <button onclick="show1()">attr</button>
+    <button onclick="show2()">prop</button>
+    <button onclick="change1()">改变值</button>
+     <button onclick="del1()">删除id</button>
+    <script>
+        $("h1").attr("id","d1").prop("class","c1 c2");
+        console.log($("h1").attr('class'));
+        function show1(){
+            console.log($("input").attr('checked'));
+        };
+        function show2(){
+            console.log($("input").prop("checked"));
+        };
+        function change1(){
+            var isChecked = $("input").prop("checked");
+            $("input").prop("checked",!isChecked);
+        };
+        function del1(){
+            $("h1").removeAttr("id");
+        };
+    </script>
+
+
+
+
+</body>
+</html>

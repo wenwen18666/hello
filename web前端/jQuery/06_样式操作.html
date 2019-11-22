@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.js"></script>
+    <style>
+        .c1{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="c3">标题1</h1>
+    <p>段落</p>
+    <label for="">label</label>
+    <button onclick="show()">toggleclass</button>
+    <script>
+        $("p").css('font-size','32px').css('color','orange');
+        $("h1").addClass("c1 c2");
+        $("h1").css({
+            color:'green',
+            width:'150px',
+            background:'pink'
+        });
+        $("h1").removeClass("c3");
+        function show() {
+            $("label").toggleClass('c1')
+        }
+    </script>
+</body>
+</html>
