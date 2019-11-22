@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6134d234-c968-4d85-8beb-83a922eae1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/26_this.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jQuery/01_jQuery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jQuery/02_过滤选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jQuery/03_属性选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jQuery/04_练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jQuery/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jQuery/08_创建元素.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/25_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +123,7 @@
       <workItem from="1574217052462" duration="1333000" />
       <workItem from="1574224625378" duration="5673000" />
       <workItem from="1574336898855" duration="3548000" />
-      <workItem from="1574340866658" duration="10488000" />
+      <workItem from="1574340866658" duration="11317000" />
     </task>
     <servers />
   </component>
